@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zcoin v14.0.0 Release with Deterministic Znodes and LLMQ</title>
+    <meta name="author" content="">
+    <meta name="description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:image" content="https://">
+    <meta property="og:description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">Get Firo</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/get-firo/download/">Download wallets</a></li>
+                               <li><a class="sub-nav-item" href="/get-firo/buy-firo/">Buy Firo</a></li>
+                               <li><a class="sub-nav-item" href="/guide/masternode-setup.html">Earn Firo</a></li>
+                               <li><a class="sub-nav-item" href="/guide/how-to-mine-firo.html">Mine</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">About</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/about/tech/">Tech</a></li>
+                               <li><a class="sub-nav-item" href="/about/team/">Team</a></li>
+                               <li><a class="sub-nav-item" href="/about/roadmap/">Roadmap</a></li>
+                               <li><a class="sub-nav-item" href="/about/faq/">FAQ</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/community/">Community</a>
+                       </li>
+                       <li class="nav-item link"><a href="/blog/">Blog</a></li>
+                       <li class="nav-item"><a href="">Crowdfunding</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">Firo Crowdfunding System</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">Get Firo</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/get-firo/download/">Download wallets</a></li>
+                              <li><a href="/get-firo/buy-firo/">Buy Firo</a></li>
+                              <li><a href="#">Earn Firo</a></li>
+                              <li><a href="/guide/how-to-mine-firo.html">Mine Firo</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">About</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/about/tech/">Tech</a></li>
+                              <li><a href="/about/team/">Team</a></li>
+                              <li><a href="/about/roadmap/">Roadmap</a></li>
+                              <li><a href="/about/faq/">FAQ</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/community/">Community</a></li>
+                      <li class="mob-item"><a href="/blog/">Blog</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">Crowdfunding</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">Firo Crowdfunding System</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>Zcoin v14.0.0 Release with Deterministic Znodes and LLMQ</h1>
+                     <p class="p-summary">This is a mandatory upgrade and a major release</p>
+                     <div class="post-meta">
+                         <p class="post-date">June 08, 2020</p>
+                         <p class="post-author">Reuben Yap</p>
+                     </div>
+                     <div class="post-body">
+                         <img src="/blog/assets/newsoftwarelease.jpg" alt="">
+                          <p>We are proud to release Zcoin v14.0.0. This is a <strong>mandatory upgrade and a major release</strong> with 14,296 commits touching over 2,831 files since the v13.8.10. <strong>Please update before 22 June 2020.</strong></p>
+
+<p>##What’s New</p>
+
+<p>*An upgrade to Bitcoin core 14/15 with an improved code structure and vastly improved syncing speeds
+*Deterministic Znode Lists
+*Long-lived masternode quorums (LLMQ)</p>
+
+<p>This upgrade builds a much more solid codebase and with the move to Deterministic Znodes, ensures a much more reliable Znode network. To find out more about deterministic Znodes and LLMQ, <a href="https://firo.org/2020/05/26/what-you-need-to-know-about-deterministic-masternodes-and-llmq.html">read here.</a></p>
+
+<p>Issues such as out of sync Znode lists, false alarms of <strong>NEW_START_REQUIRED</strong>, variance in Znode payments and micro chain splits should be a thing of the past.</p>
+
+<p>The launch of Deterministic Znodes and LLMQ also paves the way open for 51% attack protection with Chainlocks and instant sends which will be coming soon.</p>
+
+<p>##What Do I Need to Do?</p>
+
+<p>You will need to update your wallet and/or your Znode to the latest version before <strong>block 278300</strong> (Approximately June 22 2020, 12:00 UTC). This is just a simple step of backing up your wallet first, and then just running the new installation file or replacing your binary.</p>
+
+<p>*Remember that many scammers will be out to offer help to you to help you migrate so don’t accept unsolicited private messages even if it appears from a trusted person (in fact none of the team members will ever initiate a message to you first).
+*We will also never send out private messages on wallet updates.
+*Always download from our <a href="https://github.com/firoorg/firo/releases">official Github</a> and not via links provided in chat.
+*ASK IN PUBLIC IF YOU’RE UNSURE!</p>
+
+<p>If you own a Znode, you will need to register your Znode with the new Znode system. The system will be open for registration past block <strong>278300</strong>. Attempts to register before this will be met with an error. <a href="https://github.com/firoorg/firo/wiki/Migrating-your-Legacy-Znodes-to-the-new-Deterministic-Znodes-system">The guide to do this is here.</a></p>
+
+<p>Existing Znodes will continue to receive payments with the old system until block <strong>284400 (Approximately July 13 2020, 12:00 UTC).</strong> After this point if you have updated and also registered with the new Znode system, your Znode will now receive rewards on the new system with no interruption. If you fail to register your Znode on the new Znode system, your Znode will stop receiving rewards until you register with the new Znode system and you will then re-enter the queue.</p>
+
+<p>##What if I am using a hardware wallet with Znode Tool?</p>
+
+<p>Download the new <a href="https://github.com/firoorg/znode-tool-evo/releases">Znode-Tool-Evo from here.</a> The Znode Tool migration guide is <a href="https://github.com/firoorg/firo/wiki/Znode-Tool-migration-guide">available on the Zcoin wiki.</a></p>
+
+<p>##What if I am using the Electron Rich GUI wallet?</p>
+
+<p>Please download and upgrade to <a href="https://github.com/zcoinofficial/zcoin-client/releases">version 1.1.0 from Github</a>. Follow the migration guide <a href="(https://github.com/firoorg/firo/wiki/Migrating-your-Legacy-Znodes-to-the-new-Deterministic-Znodes-system)">on the Zcoin wiki.</a></p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/branding/">品牌</a></li>
+                          <li><a href="https://firo.org/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <!--div class="row bottom">
+                  <div class="col">
+                      <span>
+                          <select>
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>Chinese</option>
+                          </select>
+                      </span>
+                  </div>
+              </div-->
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

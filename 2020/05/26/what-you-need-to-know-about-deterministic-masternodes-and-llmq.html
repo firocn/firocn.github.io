@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>What you need to know about Deterministic Znodes and LLMQ</title>
+    <meta name="author" content="">
+    <meta name="description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:image" content="https://">
+    <meta property="og:description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">Get Firo</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/get-firo/download/">Download wallets</a></li>
+                               <li><a class="sub-nav-item" href="/get-firo/buy-firo/">Buy Firo</a></li>
+                               <li><a class="sub-nav-item" href="/guide/masternode-setup.html">Earn Firo</a></li>
+                               <li><a class="sub-nav-item" href="/guide/how-to-mine-firo.html">Mine</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">About</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/about/tech/">Tech</a></li>
+                               <li><a class="sub-nav-item" href="/about/team/">Team</a></li>
+                               <li><a class="sub-nav-item" href="/about/roadmap/">Roadmap</a></li>
+                               <li><a class="sub-nav-item" href="/about/faq/">FAQ</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/community/">Community</a>
+                       </li>
+                       <li class="nav-item link"><a href="/blog/">Blog</a></li>
+                       <li class="nav-item"><a href="">Crowdfunding</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">Firo Crowdfunding System</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">Get Firo</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/get-firo/download/">Download wallets</a></li>
+                              <li><a href="/get-firo/buy-firo/">Buy Firo</a></li>
+                              <li><a href="#">Earn Firo</a></li>
+                              <li><a href="/guide/how-to-mine-firo.html">Mine Firo</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">About</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/about/tech/">Tech</a></li>
+                              <li><a href="/about/team/">Team</a></li>
+                              <li><a href="/about/roadmap/">Roadmap</a></li>
+                              <li><a href="/about/faq/">FAQ</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/community/">Community</a></li>
+                      <li class="mob-item"><a href="/blog/">Blog</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">Crowdfunding</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">Firo Crowdfunding System</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>What you need to know about Deterministic Znodes and LLMQ</h1>
+                     <p class="p-summary">As we near the release of deterministic Znodes and LLMQ support that comes together with a Bitcoin core upgrade, we wish to prepare Zcoin users and Znode owners on what to expect</p>
+                     <div class="post-meta">
+                         <p class="post-date">May 26, 2020</p>
+                         <p class="post-author">Reuben Yap</p>
+                     </div>
+                     <div class="post-body">
+                         <img src="/blog/assets/deterministic-masternodes-llmq.jpg" alt="">
+                          <p>As we near the release of deterministic Znodes and LLMQ support that comes together with a Bitcoin core upgrade, we wish to prepare Zcoin users and Znode owners on what to expect. We also go into the reasons as to why this upgrade is important to Zcoin's infrastructure.</p>
+
+<h2 id="what-are-deterministic-znodes">What are Deterministic Znodes?</h2>
+
+<p>Znodes form an incentivized node infrastructure for Zcoin. Just as miners get paid to secure the network, Znodes are paid to store the blockchain and propagate blocks and provide additional services to the blockchain (more on this later).</p>
+
+<p>The current Znode system is based off Dash's original masternode infrastructure where every Znode maintained its own Znode list and relied purely on p2p messages that were not tied to the blockchain in any way. As such, there are times where Znodes cannot come to consensus as to what the correct masternode list should look like. This meant enforcing on a consensus level the correct masternode payee sometimes resulted in forks in the network. Dash mitigated this through the use of <a href="https://docs.dash.org/en/stable/introduction/features.html#sporks">sporks</a> but as sporks in its current form requires the core team to retain a master key to turn on and off certain features, we felt that as useful a feature that would be, it was against the spirit of decentralization.</p>
+
+<p>Additionally, because Znodes could not reliably reach consensus to the correct Znode list, Znode quorums were limited in size and quite fragile. A more reliable way to determine Znode payee queues and to form quorums is required to properly secure and scale Znodes so that services can properly rely on them.</p>
+
+<p>Deterministic masternode lists is a <a href="https://github.com/dashpay/dips/blob/master/dip-0003.md">Dash improvement proposal</a> to resolve these issues. Instead of each Znode maintaining its own Znode list, Znodes are registered on the blockchain via special transactions. Znode rewards are now done deterministically via the on-chain data together with PoSe (Proof of Service) checks that ensures that the Znode is online and responding correctly to be considered as valid. This also means that Znode payments will be a lot more predictable and no longer relying on luck compared to the old system where once you reach the top 10% of the queue, your Znode gets randomly selected for payment.</p>
+
+<p>Also as these Znode lists can now be in sync across different nodes since they are tied to the blockchain, much larger quorum sizes can be built with Znodes allowing for greater security and decentralization. This brings us to our next topic.</p>
+
+<h2 id="what-are-long-living-masternode-quorums-llmq">What are Long-living Masternode Quorums (LLMQ)?</h2>
+
+<p>The basic idea of masternode quorums were that a subset of masternodes could be picked pseudo randomly that were then trusted by the rest of the network to perform sensitive tasks. For example in Dash's original implementation this was used to achieve InstantSend which allowed transactions to be locked in a couple of seconds that disallowed conflicting transactions rather than needing to wait for a block confirmation. However the problem with the original masternode quorums were that they did not last very long and did not scale very well. as they only supported a small number of members (10 members). This was because propagating votes to larger member sets would overload the network and storing voting results on-chain would bloat it significantly.</p>
+
+<p>It was because of this reason and the inherent limitations of the older masternode system that discouraged us from enabling features such as InstantSend until we had deployed Deterministic Znodes and LLMQ.</p>
+
+<p><a href="https://github.com/dashpay/dips/blob/master/dip-0006.md">LLMQ</a> utilises BLS signature schemes that allow much larger masternode quorums (up to 400) to be created. This is because BLS signatures are short, many signatures can be combined into one (space saving) and multi signatures can be achieved with minimum communication (less network overhead).</p>
+
+<p>The benefit of larger masternode quorums are that it becomes much more costly to attack since you would need to control a much greater number of Znodes to have a chance at influencing quorum decisions.</p>
+
+<p>LLMQs forms a reliable and trustless way to deploy services such as Chainlocks which protects the chain against 51% mining attacks and  InstantSend which allows almost instant confirmation of transactions. Both these technologies rely on LLMQs for its security.</p>
+
+<h2 id="when-will-chainlocks-and-instantsend-be-activated">When will Chainlocks and InstantSend be activated?</h2>
+
+<p>Due to the complexity of this upgrade to Deterministic Znodes and LLMQ without using sporks, Chainlocks and InstantSend will not be activated off the bat to minimize moving parts. We intend to deploy this shortly after a successful deployment.</p>
+
+<h2 id="what-do-i-need-to-do-if-i-own-an-existing-znode">What do I need to do if I own an existing Znode?</h2>
+
+<p>Once we release the new wallet version, users will have around 3 weeks (6048 blocks) to upgrade to the new wallet software. This will be a mandatory upgrade. The guide to upgrade will be available <a href="https://github.com/firoorg/firo/wiki/Migrating-your-Legacy-Znodes-to-the-new-Deterministic-Znodes-system">here</a>.</p>
+
+<p><strong>Remember that many scammers will be out to offer help to you to help you migrate so don't accept unsolicited private messages even if it appears from a trusted person (in fact none of the core team members will ever initiate a message to you first). We will also never send out private messages on wallet updates.</strong></p>
+
+<p>After the 3 weeks have passed, the new deterministic Znodes system will be open for registration. Users will be required to re-register their Znodes using the new deterministic Znode system. During this registration period which will also last 3 weeks, the existing legacy Znodes will continue to operate and payments will still be done using the legacy system. You would not need to move your 1000 XZC Znode collateral.</p>
+
+<p>After the end of the 3 week registration period, the old Znode system will cease to function and deterministic Znodes will take over the Znode payment system. Even if you have missed the window for the re-registration of your Znode, don't worry, as you will continue to be able to do so. However, we recommend existing Znode owners to do it as soon as they can to avoid missing out on payments.</p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/branding/">品牌</a></li>
+                          <li><a href="https://firo.org/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <!--div class="row bottom">
+                  <div class="col">
+                      <span>
+                          <select>
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>Chinese</option>
+                          </select>
+                      </span>
+                  </div>
+              </div-->
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
