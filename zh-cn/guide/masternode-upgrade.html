@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upgrading your Firo masternode | 飞熔币 - 财务隐私焕新</title>
+    <meta name="author" content="">
+    <meta name="description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:image" content="http://localhost:4000/img/firo-icon.png">
+    <meta property="og:description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">获取飞熔币</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">关于</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/about/tech/">技术</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/team/">团队</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/roadmap/">路线图</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/faq/">常问问题</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/community/">社区</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/guide/">指南</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="nav-item"><a href="#">众筹</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">飞熔币众筹系统</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">获取飞熔币</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                              <li><a href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">关于</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/about/tech/">技术</a></li>
+                              <li><a href="/zh-cn/about/team/">团队</a></li>
+                              <li><a href="/zh-cn/about/roadmap/">路线图</a></li>
+                              <li><a href="/zh-cn/about/faq/">常问问题</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/zh-cn/community/">社区</a></li>
+                      <li class="mob-item"><a href="/zh-cn/guide/">指南</a></li>
+                      <li class="mob-item"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">众筹</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">飞熔币众筹系统</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section guide-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>Upgrading your Firo masternode</h1>
+                     <p class="p-summary"></p>
+                     <div class="post-body">
+                         <img src="" alt="">
+                          <p>Here’s a quick step-by-step guide to get your masternode up and running with the latest version in a few minutes. This guide assumes you are upgrading from a previous 0.14.x.x version to the <strong>latest 0.14.5.3</strong>. If you are upgrading from earlier versions, please adjust the folder paths in step 4 accordingly.</p>
+
+<p>Please note that if you did not update in time to a mandatory release or before the hard fork, your masternode will stop receiving rewards. It is highly advisable to update to the latest stable version as soon as possible.</p>
+
+<p><strong>Important notice for v0.14.5.3:</strong> You can migrate your default data directory and zcoin.conf with the <strong>-migratetofiro</strong> flag. This only works if you are using the default data directory.</p>
+
+<p>If you are using a <strong>custom data directory (-datadir), please migrate manually</strong> by renaming your custom data directory/ zcoin.conf to firo.conf, and making sure that the <strong>-datadir=</strong> flag is pointing to the correct directory.</p>
+
+<ol>
+  <li>
+    <p>Log on to your masternode</p>
+  </li>
+  <li>
+    <p>Copy a link to the Linux archive from <a href="https://github.com/firoorg/firo/releases/latest">GitHub</a> or <a href="https://sourceforge.net/projects/firoorg/files/">Sourceforge</a> by right-clicking the file name (e.g. firo-0.14.5.3-linux64.tar.gz) and selecting the copy link menu item in your browser.</p>
+  </li>
+  <li>
+    <p>On the masternode’s command line, type <strong>wget</strong> and insert the copied link after it like so: </p>
+  </li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">cd ~</code>
+<code class="language-plaintext highlighter-rouge">wget https://github.com/firoorg/firo/releases/download/v0.14.5.3/firo-0.14.5.3-linux64.tar.gz</code></p>
+
+<p>This will download the archive to your masternode.</p>
+
+<ol>
+  <li>Stop the old daemon</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">cd ~/firo-0.14.5/bin</code> 
+(this is the folder of the major version you are upgrading <em>from</em>) 
+<code class="language-plaintext highlighter-rouge">./firo-cli stop</code> 
+and remove the old version 
+<code class="language-plaintext highlighter-rouge">cd ~</code> 
+<code class="language-plaintext highlighter-rouge">rm -rv firo-0.14.5</code> 
+(see above)</p>
+
+<ol>
+  <li>
+    <p>Unpack the downloaded archive by typing 
+<code class="language-plaintext highlighter-rouge">tar xvzf firo-0.14.5.3-linux64.tar.gz</code></p>
+  </li>
+  <li>
+    <p>Now you can start your masternode again 
+<code class="language-plaintext highlighter-rouge">cd ~/firo-0.14.5/bin</code> 
+(new version) 
+<code class="language-plaintext highlighter-rouge">./firod -daemon</code></p>
+  </li>
+</ol>
+
+<p><strong>Always check that your masternode is running normally after every upgrade</strong> with 
+<code class="language-plaintext highlighter-rouge">./firo-cli getinfo</code>
+<code class="language-plaintext highlighter-rouge">./firo-cli evoznode status</code></p>
+
+<p>Failure to check can cause your masternode to <strong>get banned</strong> some time later.</p>
+
+<p>While you're at it, don't forget to upgrade your local wallet too! Just <a href="https://firo.org/get-firo/download/">download</a> from our website and install replacing the old version. Just make sure to always have a backup of your wallet.dat!</p>
+
+<p>If you have any questions, feel free to join our <a href="https://discordapp.com/invite/4FjnQ2q">Discord</a> or <a href="https://t.me/firoproject">Telegram</a> groups.</p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/zh-cn/branding/">品牌</a></li>
+                          <li><a href="/zh-cn/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块链浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/zh-cn/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row bottom">
+                  <div class="col">
+                      <div href="#" class="dropdown language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox" tabindex="0">
+                            <label for="langdrop">Chinese
+                           <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                              
+                                
+                                  
+                                    <a href="/guide/masternode-upgrade.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

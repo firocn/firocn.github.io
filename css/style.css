@@ -529,7 +529,7 @@ h1, h2, h3 {
     display: none;
 }
 
-@media only screen and (max-width: 62rem) {
+@media only screen and (max-width: 75rem) {
     
 header .container {
     width: 100%;
@@ -2053,6 +2053,10 @@ a.btn-primary, a.btn-secondary {
     width: 46rem;
 }
     
+.faq-section .tab-label {
+    padding: 1rem 3rem 1rem 1.5rem;
+}
+    
 }
 
 @media only screen and (max-width: 48rem) {
@@ -2591,6 +2595,7 @@ a.btn-primary, a.btn-secondary {
   padding-bottom: 3rem;
   padding-left: 3.125rem;
   padding-top: 3rem;
+  padding-right: 2rem;
   position: relative;
 }
 
@@ -2606,19 +2611,25 @@ a.btn-primary, a.btn-secondary {
   top: 0;
 }
 .timeline .event:after {
-  box-shadow: 0 0 0 4px #9b1c2e;
-  left: -7.5px;
+  border: 4px solid #9b1c2e;
+  left: -12.5px;
   background: #ffffff;
   border-radius: 50%;
-  height: 11px;
-  width: 11px;
+  height: 14px;
+  width: 14px;
   content: "";
   top: 45%;
 }
 
 .timeline .event.done:after {
   background: #9b1c2e;
-  box-shadow: 0 0 0 4px #9b1c2e;
+}
+
+.timeline .event p {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #636060;
 }
 
 .road-more {
@@ -2635,6 +2646,10 @@ a.btn-primary, a.btn-secondary {
 .timeline h3 {
     font-size: 1.2rem;
     line-height: 1.5;
+}
+    
+.timeline .event p {
+    font-size: 1rem;
 }
     
 }
@@ -2788,8 +2803,13 @@ a.btn-primary, a.btn-secondary {
 
 .blog-section .col.post-page .post-body ul {
     list-style: disc;
-    list-style-position: inside;
-    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.blog-section .col.post-page .post-body ul ul {
+    list-style: circle;
+    padding-top: 0;
 }
 
 .blog-section ol, .guide-section ol {
@@ -2799,7 +2819,6 @@ a.btn-primary, a.btn-secondary {
 }
 
 .blog-section .col.post-page .post-body ul li, .blog-section .col.post-page .post-body ol li {
-    padding-top: 1rem;
     font-size: 1.2rem;
 }
 
@@ -2872,6 +2891,42 @@ a.btn-primary, a.btn-secondary {
 
 /*guide*/
 
+.guides-list a {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 3rem 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #e5eff4;
+    border-top: 1px solid #fefefe;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.guides-list a:before, .guides-list a:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 1.5rem;
+    width: 3px;
+    height: 0.7rem;
+    background-color: #3d3939;
+    border-radius: 4px;
+}
+
+.guides-list a:before {
+    transform: rotate(-45deg);
+    top: 1.5rem;
+}
+
+.guides-list a:after {
+    transform: rotate(45deg);
+    top: 1.9rem;
+}
+
 .guide-section .container {
     width: 69.5rem;
 }
@@ -2901,6 +2956,14 @@ a.btn-primary, a.btn-secondary {
     
 .guide-section .container {
     width: 100%;
+}
+    
+}
+
+@media only screen and (max-width: 30rem) {
+    
+.guides-list a {
+    font-size: 1.1rem;
 }
     
 }
@@ -3017,47 +3080,101 @@ footer .bottom .col {
     color: #7e848a;
 }
 
-.bottom span {
+/*language select*/
+
+.language-change {
+    position: relative;
+    display: inline-block;
+}
+
+.language-change label {
   display: inline-block;
   position: relative;
   vertical-align: middle;
+  cursor: pointer;
+  padding: 0.5rem 4rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: #d3dbe3;
+  border-radius: 40px;
 }
-.bottom  span:before, .bottom  span:after {
+.language-change label:before, .language-change label:after {
   content: "";
   position: absolute;
 }
 
-.bottom  span:before {
+.language-change label:before {
     content: '\f1ab';
     font-family: "icons";
     font-size: 1.5rem;
+    left: 1.9rem;
+    top: 0.2rem;
 }
 
-.bottom  span:after {
+.language-change label:after {
   color: #7e848a;
   font-family: "icons";
   font-size: inherit;
   content: "\e802";
-  padding: 0.5rem;
   pointer-events: none;
-  right: 0.3rem;
-  top: 0;
+  right: 1.9rem;
+  top: 0.5rem;
 }
 
-.bottom  select {
-  color: #7e848a;
-  cursor: pointer;
-  background: #c9d3dc;
-  border: 2px solid #c9d3dc;
-  font-size: 1.1rem;
-  padding: 0.5rem 1.3rem 0.5rem 1.5rem;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.language-change .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 3.5rem;
+    text-align: left;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 2;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    -moz-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    -webkit-box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    box-shadow: 0 3px 5px rgba(50,50,93,.1);
+    color: #7e848a;
+    cursor: pointer;
+    background: #f6f8fc;
+    font-size: 1.1rem;
+    border-radius: 8px;
 }
 
-.bottom  select option {
-  color: #3d3939;
+.language-change input:checked ~ .dropdown-content {
+    display: block;
+}
+
+.language-change input:checked + label:after {
+    transform: rotate(180deg);
+}
+
+.language-change .dropdown-content a:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.language-change .dropdown-content a:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.language-change .dropdown-content a {
+    display: block;
+    padding: 0.8rem 1rem 0.8rem 1.9rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3d3939;
+}
+
+.language-change .dropdown-content a:hover, .language-change .dropdown-content a:focus {
+    text-decoration: none;
+    background-color: rgba(201,211,220,.5);
 }
 
 @media only screen and (max-width: 62rem) {
@@ -3074,6 +3191,17 @@ footer .col:nth-of-type(3) {
     max-width: 100%;
     margin-top: 2rem;
 }    
+    
+}
+
+@media only screen and (max-width: 48rem) {
+
+footer .bottom .col {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: left;
+}   
     
 }
 
@@ -3109,3 +3237,4 @@ footer .social li i {
 }
     
 }
+

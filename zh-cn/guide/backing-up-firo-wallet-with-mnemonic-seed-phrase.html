@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to backup your Firo wallet with a mnemonic seed phrase | 飞熔币 - 财务隐私焕新</title>
+    <meta name="author" content="">
+    <meta name="description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:image" content="http://localhost:4000/img/firo-icon.png">
+    <meta property="og:description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">获取飞熔币</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">关于</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/about/tech/">技术</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/team/">团队</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/roadmap/">路线图</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/faq/">常问问题</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/community/">社区</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/guide/">指南</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="nav-item"><a href="#">众筹</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">飞熔币众筹系统</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">获取飞熔币</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                              <li><a href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">关于</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/about/tech/">技术</a></li>
+                              <li><a href="/zh-cn/about/team/">团队</a></li>
+                              <li><a href="/zh-cn/about/roadmap/">路线图</a></li>
+                              <li><a href="/zh-cn/about/faq/">常问问题</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/zh-cn/community/">社区</a></li>
+                      <li class="mob-item"><a href="/zh-cn/guide/">指南</a></li>
+                      <li class="mob-item"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">众筹</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">飞熔币众筹系统</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section guide-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>How to backup your Firo wallet with a mnemonic seed phrase</h1>
+                     <p class="p-summary"></p>
+                     <div class="post-body">
+                         <img src="" alt="">
+                          <p>Mnemonic (seed phrase) backup feature was introduced in December 2019 with version <a href="https://github.com/firoorg/firo/releases">0.13.8.10</a>, following the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">BIP39 standard</a>.</p>
+
+<p>This allows you to easily store a backup of your wallet offline as well as restoring it to other compatible wallets that supports mnemonic words, instead of just backing up your wallet.dat file previous.</p>
+
+<p><strong>Warning:</strong> Electrum-Firo uses a different seed phrase standard and thus <strong>cannot be imported</strong> into the QT or Electron wallet. You can import the QT/Electron seed into Electrum-Firo, but ensure the <strong>BIP39</strong> option is checked.</p>
+
+<h2 id="creating-a-new-wallet-with-a-mnemonic-seed-phrase">Creating a new wallet with a mnemonic seed phrase</h2>
+
+<p><img src="/guide/assets/backing-up-wallet-with-mnemonic-seed-phrase/seed_01.png" alt="" /></p>
+
+<ol>
+  <li>
+    <p>Select "<strong>Create a new wallet</strong>".</p>
+  </li>
+  <li>
+    <p>Choose either 12 or 24 words seed. 24 words seed is selected by default although 12 word seed is also available for compatibility reasons. A 24 word seed provides 256-bit security while a 12 word seed provides 128-bit security.</p>
+  </li>
+</ol>
+
+<p><img src="/guide/assets/backing-up-wallet-with-mnemonic-seed-phrase/seed_02.png" alt="" /></p>
+
+<p><strong>WARNING:</strong> Do not use the mnemonic words in the example above! If you do, your funds will be gone!</p>
+
+<p>You can also add a mnemonic passphrase by checking the "Use seed passphrase" box to prevent easy access to your seed. However this means you should backup your mnemonic passphrase as well as the seed phrase.</p>
+
+<ol>
+  <li>
+    <p>Click on "<strong>OK</strong>".</p>
+  </li>
+  <li>
+    <p>After your wallet has been created, you will be presented with a window containing your mnemonic seed words. You will need to write down these words and store them in a secure location. Once you have done so, click on the "<strong>Next</strong>" button.</p>
+  </li>
+  <li>
+    <p>You will be prompted to enter your mnemonic seed words again to ensure that they were written down correctly. <strong>This is your last chance to view and record this mnemonic seed words as after this, if you lose it, you will lose all your funds.</strong> Enter all the words in the correct order and click on "<strong>Finish</strong>" to verify that you have recorded your seed phrase correctly.</p>
+  </li>
+</ol>
+
+<h2 id="restoring-wallet-from-seed-phrase">Restoring wallet from seed phrase</h2>
+
+<p><img src="/guide/assets/backing-up-wallet-with-mnemonic-seed-phrase/seed_03.png" alt="" /></p>
+
+<p><strong>WARNING:</strong> Do not use the mnemonic words in the example above! If you do, your funds will be gone!</p>
+
+<ol>
+  <li>
+    <p>Select the "<strong>Recover existing wallet</strong>" and choose the number of words matching your backed up mnemonic words.</p>
+  </li>
+  <li>
+    <p>Enter your backed up seed words into the "<strong>Input words here</strong>" box.</p>
+  </li>
+  <li>
+    <p>If you have secured your seed words with a passphrase when creating the seed, click on "<strong>Use seedphrase (optional)</strong>" and enter in your mnemonic passphrase here (this is not the same as your wallet password).</p>
+  </li>
+  <li>
+    <p>Click the "<strong>OK</strong>" button.</p>
+  </li>
+</ol>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/zh-cn/branding/">品牌</a></li>
+                          <li><a href="/zh-cn/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块链浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/zh-cn/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row bottom">
+                  <div class="col">
+                      <div href="#" class="dropdown language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox" tabindex="0">
+                            <label for="langdrop">Chinese
+                           <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                              
+                                
+                                  
+                                    <a href="/guide/backing-up-firo-wallet-with-mnemonic-seed-phrase.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

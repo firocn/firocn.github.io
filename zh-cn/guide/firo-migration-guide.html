@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Migrating your wallet from Zcoin to Firo  | 飞熔币 - 财务隐私焕新</title>
+    <meta name="author" content="">
+    <meta name="description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:image" content="http://localhost:4000/img/firo-icon.png">
+    <meta property="og:description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">获取飞熔币</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">关于</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/about/tech/">技术</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/team/">团队</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/roadmap/">路线图</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/faq/">常问问题</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/community/">社区</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/guide/">指南</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="nav-item"><a href="#">众筹</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">飞熔币众筹系统</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">获取飞熔币</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                              <li><a href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">关于</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/about/tech/">技术</a></li>
+                              <li><a href="/zh-cn/about/team/">团队</a></li>
+                              <li><a href="/zh-cn/about/roadmap/">路线图</a></li>
+                              <li><a href="/zh-cn/about/faq/">常问问题</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/zh-cn/community/">社区</a></li>
+                      <li class="mob-item"><a href="/zh-cn/guide/">指南</a></li>
+                      <li class="mob-item"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">众筹</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">飞熔币众筹系统</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section guide-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>Migrating your wallet from Zcoin to Firo </h1>
+                     <p class="p-summary"></p>
+                     <div class="post-body">
+                         <img src="" alt="">
+                          <h2 id="important-notes">Important notes</h2>
+
+<ul>
+  <li>
+    <p>There are <strong>no chain swaps.</strong></p>
+  </li>
+  <li>
+    <p>You <strong>do not need to send Zcoin</strong> from the Zcoin wallet to the Firo wallet.</p>
+  </li>
+  <li>
+    <p>You can continue using Electrum-xzc as long as you are on <strong>version 3.3.8a9</strong></p>
+  </li>
+  <li>
+    <p>Ledger and Trezor users can <strong>continue using the Zcoin app</strong></p>
+  </li>
+</ul>
+
+<h2 id="things-to-do-before-updating">Things to do before updating</h2>
+
+<ul>
+  <li>
+    <p>backup wallet.dat</p>
+  </li>
+  <li>
+    <p>check the current data directory ( Help -&gt; Debug window -&gt; Datadir )</p>
+  </li>
+  <li>
+    <p>check current block on Zcoin wallet ( Help -&gt; Debug window -&gt; Current number of blocks )</p>
+  </li>
+  <li>
+    <p>check current Zcoin wallet version ( Help -&gt; Debug window -&gt; Client version )</p>
+  </li>
+  <li>
+    <p>all the above information are IMPORTANT if you want to get help!</p>
+  </li>
+</ul>
+
+<p><strong>REMEMBER:</strong> If you use a different data directory, it is your responsibility to ensure the Firo QT wallet starts with the correct directory.</p>
+
+<p>Default data directory for Zcoin are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Windows: C:\Users\YOURUSERNAME\AppData\zcoin
+Linux: ~/.zcoin
+MacOS:  /Users/YOURUSERNAME/Library/Application\ Support/zcoin/
+</code></pre></div></div>
+
+<h2 id="step-1">Step 1</h2>
+
+<p>Download and install the latest version here:</p>
+
+<p><a href="https://github.com/firoorg/firo/releases/latest">https://github.com/firoorg/firo/releases/latest</a></p>
+
+<h2 id="step-2">Step 2</h2>
+
+<p>On QT wallet's first startup, you will be presented with the following:</p>
+
+<h3 id="if-you-are-using-a-custom-data-directory">If you are using a custom data directory</h3>
+
+<p><img src="/guide/assets/firo-migration-guide/datadir_select.PNG" alt="" /></p>
+
+<p>The wallet will ask you to specify the data directory. Select the one you previously used for Zcoin and proceed.</p>
+
+<p><strong>If it asks you to create a new wallet</strong>, you did not specify the correct data directory. Close the wallet by clicking the 'Cancel' button at the bottom of the "Create and recover wallet", and follow the steps in <strong>Resetting Options</strong> at the bottom of this guide.</p>
+
+<h3 id="if-you-are-using-the-default-data-directory">If you are using the default data directory</h3>
+
+<p><img src="/guide/assets/firo-migration-guide/firo-qt-migrate.PNG" alt="" /></p>
+
+<p>The wallet will ask you if you want to migrate the default data directory from zcoin to firo. Press Yes to proceed.</p>
+
+<h2 id="step-3">Step 3</h2>
+
+<p>The Firo QT wallet should now show your balance, transactions and masternode (if any).</p>
+
+<h2 id="after-migrating">After migrating</h2>
+
+<p><img src="/guide/assets/firo-migration-guide/use-transparent-balance.jpg" alt="" /></p>
+
+<p>The new wallet defaults to Sending your private balance that were anonymised with the Lelantus protocol. This can cause the <strong>"The amount exceeds your balance"</strong> error to appear if you try to send your non-anonymised balance.</p>
+
+<p>Click on the <strong>'Use Transparent Balance'</strong> on the bottom right of the Send tab to switch to your non-private balance. You should now be able to send them out.</p>
+
+<h2 id="stuck-on-block-336890">Stuck on block 336890</h2>
+
+<p>If you are <strong>stuck on block 336890</strong>, update to the <a href="https://github.com/firoorg/firo/releases/latest">latest version</a> and do the following:</p>
+
+<h3 id="wallet">Wallet:</h3>
+
+<p>Go to Help -&gt; Debug Window -&gt; Console and enter:</p>
+
+<p><code class="language-plaintext highlighter-rouge">reconsiderblock bac60b152687f66dc8e70896642b76334f04b256a6875f6c048b153aad923406</code></p>
+
+<p>Output will be (null). Restart wallet and it should start syncing.</p>
+
+<h3 id="masternode">Masternode:</h3>
+
+<p><code class="language-plaintext highlighter-rouge">./firo-cli reconsiderblock bac60b152687f66dc8e70896642b76334f04b256a6875f6c048b153aad923406</code></p>
+
+<h2 id="resetting-options">Resetting options</h2>
+
+<h3 id="windows">Windows</h3>
+
+<p>Open the folder where the <strong>firo-qt.exe</strong> is located. Hold Shift, right-click inside the folder and select <strong>'Open PowerShell window here'</strong>. In the window that appears, type:</p>
+
+<p><code class="language-plaintext highlighter-rouge">.\firo-qt.exe -resetguisettings</code></p>
+
+<p>The wallet should now start with the 'Choose your data directory' window.</p>
+
+<h3 id="macos">MacOS</h3>
+
+<p>Using the <strong>Terminal</strong>, enter the following command:</p>
+
+<p><code class="language-plaintext highlighter-rouge">/Applications/firo-qt.app/Contents/MacOS/Firo-qt -resetguisettings</code></p>
+
+<p>The wallet should now start with the 'Choose your data directory' window.</p>
+
+<h3 id="linux">Linux</h3>
+
+<p>Navigate to the directory where your <strong>firo-qt</strong> binary is. In the <strong>Terminal</strong>, type in the following:</p>
+
+<p><code class="language-plaintext highlighter-rouge">./firo-qt -resetguisettings</code></p>
+
+<p>The wallet should now start with the 'Choose your data directory' window.</p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/zh-cn/branding/">品牌</a></li>
+                          <li><a href="/zh-cn/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块链浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/zh-cn/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row bottom">
+                  <div class="col">
+                      <div href="#" class="dropdown language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox" tabindex="0">
+                            <label for="langdrop">Chinese
+                           <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                              
+                                
+                                  
+                                    <a href="/guide/firo-migration-guide.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>

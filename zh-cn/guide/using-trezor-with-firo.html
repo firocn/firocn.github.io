@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Use Trezor With Firo | 飞熔币 - 财务隐私焕新</title>
+    <meta name="author" content="">
+    <meta name="description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:image" content="http://localhost:4000/img/firo-icon.png">
+    <meta property="og:description" content="飞熔币是一种专注于制定隐私标准的数字货币。">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">获取飞熔币</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">关于</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-cn/about/tech/">技术</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/team/">团队</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/roadmap/">路线图</a></li>
+                               <li><a class="sub-nav-item" href="/zh-cn/about/faq/">常问问题</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/community/">社区</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/guide/">指南</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="nav-item"><a href="#">众筹</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">飞熔币众筹系统</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/zh-cn/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">获取飞熔币</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/get-firo/download/">下载钱包</a></li>
+                              <li><a href="/zh-cn/get-firo/buy-firo/">买飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/masternode-setup.html">赚飞熔币</a></li>
+                              <li><a href="/zh-cn/guide/how-to-mine-firo.html">挖矿</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">关于</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-cn/about/tech/">技术</a></li>
+                              <li><a href="/zh-cn/about/team/">团队</a></li>
+                              <li><a href="/zh-cn/about/roadmap/">路线图</a></li>
+                              <li><a href="/zh-cn/about/faq/">常问问题</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/zh-cn/community/">社区</a></li>
+                      <li class="mob-item"><a href="/zh-cn/guide/">指南</a></li>
+                      <li class="mob-item"><a href="/zh-cn/blog/">博客</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">众筹</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">飞熔币众筹系统</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section guide-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>How to Use Trezor With Firo</h1>
+                     <p class="p-summary"></p>
+                     <div class="post-body">
+                         <img src="/guide/assets/using-trezor-with-firo/a_trezor.jpg" alt="">
+                          <p>We’re happy that Firo has <a href="http://zcoin.io/trezor-adds-zcoin-support-to-both-trezor-one-and-trezor-t/">finally been integrated</a> with Trezor, probably the world’s most widely-used hardware wallet. While the current firmware fully supports Firo, Trezor has announced that we will only “be gradually surfacing in Trezor Wallet” and that coins “can be accessed via third-party applications like Electrum”. In this tutorial we will be showing you two ways to use your  Trezor One or Trezor T with Firo; one using the Trezor Wallet and the other using our version of Electrum, <a href="https://github.com/firoorg/electrum-firo/releases">Electrum-Firo</a>.</p>
+
+<h2 id="using-firo-with-trezor-wallet">Using Firo with Trezor Wallet</h2>
+
+<p>In order to configure add a Firo wallet to Trezor’s web wallet, connect your Trezor, log in to <a href="https://wallet.trezor.io/">TREZOR Wallet</a> and go to <strong>Wallet settings.</strong> It does not matter which wallet is selected at the top.</p>
+
+<p><img src="/guide/assets/using-trezor-with-firo/trezor_wallet.png" alt="Configuring Trezor for Firo" /></p>
+
+<p>Disregarding the <strong>Select wallet currency</strong> dropdown on the left, please paste <a href="https://blockbook.firo.org">https://blockbook.firo.org</a> as both, the <em>Bitcore Server URL</em> and <em>Explorer URL</em>. The wallet currency will automatically switch to <strong>Manual configuration.</strong></p>
+
+<p><img src="/guide/assets/using-trezor-with-firo/trezor_blockbook.png" alt="" /></p>
+
+<p>Click <strong>Save &amp; Reload.</strong></p>
+
+<p><img src="/guide/assets/using-trezor-with-firo/trezor_custom_backend.png" alt="Trezor Firo Wallet" /></p>
+
+<p>Note how a new entry called <strong>Custom backend</strong> has appeared at the top. This is your Firo wallet. You can use it to send, receive and sign or verify transactions like with any other Trezor wallet.  </p>
+
+<h2 id="using-trezor-with-electrum">Using Trezor with Electrum</h2>
+
+<p>To use Trezor with Electrum-Firo, please first download Electrum-Firo from <a href="https://github.com/firoorg/electrum-firo/releases">here</a> and install it. Then connect your Trezor and start Electrum-Firo.</p>
+
+<ol>
+  <li>
+    <p>Pick a name and location for your wallet file or accept the defaults</p>
+  </li>
+  <li>
+    <p>Create a <strong>Standard wallet</strong></p>
+  </li>
+  <li>
+    <p>In the <strong>Keystore</strong> selection dialogue, pick <strong>Use a hardware device</strong></p>
+  </li>
+  <li>
+    <p>Pick your Trezor as the <strong>Hardware Keystore</strong></p>
+  </li>
+  <li>
+    <p>In the <strong>Derivation</strong> dialogue, accept the default path or customise if you know what you’re doing.</p>
+  </li>
+</ol>
+
+<p>Now the Electrum-Firo window will open and you’re ready to go!</p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>资源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/zh-cn/branding/">品牌</a></li>
+                          <li><a href="/zh-cn/2018/07/15/firo-vulnerability-bounty-program.html">漏洞计划</a></li>
+                          <li><a href="https://explorer.firo.org/">区块链浏览器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>网站</h4>
+                      <ul>
+                          <li><a href="/zh-cn/privacy-policy/">隐私政策</a></li>
+                          <li><a href="">服务条款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新闻期刊</h4>
+                          <p>如果你想订阅我们的新闻期刊，请提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="邮箱*">
+                              <button type="submit" class="newsletter-submit"><span>订阅</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入讨论</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row bottom">
+                  <div class="col">
+                      <div href="#" class="dropdown language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox" tabindex="0">
+                            <label for="langdrop">Chinese
+                           <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                              
+                                
+                                  
+                                    <a href="/guide/using-trezor-with-firo.html" >English</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
