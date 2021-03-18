@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zcoin moving beyond trusted setup in Zerocoin | 飛熔幣 - 財務隱私煥新</title>
+    <meta name="author" content="">
+    <meta name="description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:image" content="https://">
+    <meta property="og:description" content="Firo is a digital currency with a focus on setting privacy standards.">
+    <meta property="og:title" content="Firo">
+    <meta name="twitter:title" content="Firo">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/meta/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/meta/favicon-16x16.png">
+    <link rel="manifest" href="img/meta/site.webmanifest">
+</head>
+
+  <body>
+    <main>
+        <header>
+      <div class="container">
+               <nav class="row" role='navigation'>
+                   <a class="logo col" href="/zh-tw/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                   <ul class="main-menu col">
+                       <li class="nav-item"><a href="#">獲取飛熔幣</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-tw/get-firo/download/">下載錢包</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/get-firo/buy-firo/">買飛熔幣</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/guide/masternode-setup.html">賺飛熔幣</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/guide/how-to-mine-firo.html">挖礦</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item"><a href="#">關於</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="/zh-tw/about/tech/">技術</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/about/team/">團隊</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/about/roadmap/">路線圖</a></li>
+                               <li><a class="sub-nav-item" href="/zh-tw/about/faq/">常問問題</a></li>
+                           </ul>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-tw/community/">社區</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-tw/guide/">指南</a>
+                       </li>
+                       <li class="nav-item link"><a href="/zh-tw/blog/">博客</a></li>
+                       <li class="nav-item"><a href="#">眾籌</a>
+                           <ul class="dropdown" aria-label="submenu">
+                               <li><a class="sub-nav-item" href="https://ccs.firo.org/" target="_blank">飛熔幣眾籌系統</a></li>
+                               <li><a class="sub-nav-item" href="https://opencollective.com/firo" target="_blank">Open Collective</a></li>
+                           </ul>
+                       </li>
+                   </ul>
+               </nav>
+               <nav role='navigation' class="mobile-menu row">
+                  <a class="logo-mobile col" href="/zh-tw/index.html" aria-label="Firo Cryptocurrency"><img src="/img/firo-logo.svg" alt="Firo Cryptocurrency logo"></a>
+                  <input class="burger-check" id="mobile-burger" type="checkbox">
+                  <label for="mobile-burger" class="hamburger hamburger--spring">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                  </label>
+                  <ul class="slide-nav">
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list1" type="checkbox" tabindex="0">
+                          <label for="list1">獲取飛熔幣</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-tw/get-firo/download/">下載錢包</a></li>
+                              <li><a href="/zh-tw/get-firo/buy-firo/">買飛熔幣</a></li>
+                              <li><a href="/zh-tw/guide/masternode-setup.html">賺飛熔幣</a></li>
+                              <li><a href="/zh-tw/guide/how-to-mine-firo.html">挖礦</a></li>
+                          </ul>
+                       </li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list2" type="checkbox" tabindex="0">
+                          <label for="list2">關於</label>
+                          <ul class="dropdown-content">
+                              <li><a href="/zh-tw/about/tech/">技術</a></li>
+                              <li><a href="/zh-tw/about/team/">團隊</a></li>
+                              <li><a href="/zh-tw/about/roadmap/">路線圖</a></li>
+                              <li><a href="/zh-tw/about/faq/">常問問題</a></li>
+                          </ul>
+                       </li>
+                      <li class="mob-item"><a href="/zh-tw/community/">社區</a></li>
+                      <li class="mob-item"><a href="/zh-tw/guide/">指南</a></li>
+                      <li class="mob-item"><a href="/zh-tw/blog/">博客</a></li>
+                       <li class="mob-item">
+                          <input class="burger-checkdropdown" id="list3" type="checkbox" tabindex="0">
+                          <label for="list3">眾籌</label>
+                          <ul class="dropdown-content">
+                              <li><a href="https://ccs.firo.org/">飛熔幣眾籌系統</a></li>
+                              <li><a href="https://opencollective.com/firo">Open Collective</a></li>
+                          </ul>
+                       </li>
+                  </ul>
+               </nav>
+       </div>
+   </header>
+
+        
+        <section class="blog-section">
+         <div class="container">
+              <div class="row">
+                  <div class="col post-page">
+                     <h1>Zcoin moving beyond trusted setup in Zerocoin</h1>
+                     <p class="p-summary">Solving the trustless setup problem through the use of the Sigma protocol</p>
+                     <div class="post-meta">
+                         <p class="post-date">April 21, 2017</p>
+                         <p class="post-author">Reuben Yap</p>
+                     </div>
+                     <div class="post-body">
+                         <img src="" alt="">
+                          <h2 id="what-is-a-trusted-setup">What is a Trusted Setup?</h2>
+
+<p>Zero knowledge setups offer amazing anonymity with anonymity sets exceeding thousands compared to previous anonymity schemes that typically only offer a dozen or so. One of the primary criticisms of Zerocoin and other zero knowledge coins like Zcash is that it requires a <strong>'trusted setup'</strong> phase. A trusted setup means you need to trust someone to generate some initial parameters and then destroy those parameters.</p>
+
+<p>A way to visualize it would be akin to making a lock and then trusting that person to destroy the only key to it. It is however not easy to prove that the key was destroyed, for e.g. in our example scenario, was a duplicate made somewhere? Or a photo taken of the key before it was destroyed? The same type of problems exist when trying to prove that the initial parameters were permanently destroyed and not known by anyone.</p>
+
+<p>The consequences of having the initial parameters leaked is that someone can generate coins out of thin air by doing forged Zerocoin spend transactions. In Zcoin, this is mitigated somewhat by having an auditable supply.</p>
+
+<h2 id="how-is-trusted-setup-implemented-in-zcoin">How is Trusted Setup implemented in Zcoin?</h2>
+
+<p>Zerocoin as implemented in Zcoin and in the original paper currently uses RSA accumulators which require the generation of two large <a href="https://en.wikipedia.org/wiki/Prime_number">prime numbers.</a> We utilized the RSA-2048 parameters generated in 1991 from the <a href="https://www.emc.com/emc-plus/rsa-labs/historical/the-rsa-factoring-challenge-faq.htm">RSA factoring challenge</a> which was an academic challenge to learn about the difficulty of factoring large number and the parameters we used had a <strong>USD200,000</strong> prize if someone managed to factor it. To this day, no one has claimed the prize or announced a successful factorization of RSA-2048 with the last publicly successful factorization at RSA-768.</p>
+
+<p>Using the RSA factoring challenge parameters meant that you did not need to trust the Zcoin developers and only trust that the parameters from the RSA factoring challenge remained secure. For further reading on the RSA factoring challenge, you can read more <a href="https://github.com/firoorg/firo/wiki/Parameters-in-set-up-phase-for-Zerocoin-in-Zcoin">here.</a> However, we recognize that having a trusted setup is not ideal and it was always in our roadmap to implement a trustless setup. There has been previous attempts to remove the trusted setup in Zerocoin and the most well known one was the proposed use of RSA UFOs which thus far have been impractical to implement.</p>
+
+<h2 id="how-zcoin-is-removing-the-trusted-setup">How Zcoin is removing the trusted setup</h2>
+
+<p>We are therefore very happy to announce that we believe we have found the answer in solving the trustless setup problem through the use of the <a href="https://eprint.iacr.org/2014/764.pdf">Sigma protocol</a>  in Zerocoin as detailed by Jens Groth and Markulf Kohlweiss from University College London and Microsoft Research.</p>
+
+<p>In a nutshell, the <strong>Sigma (Σ) protocol</strong> does the following:</p>
+
+<ul>
+  <li>
+    <p>No more trusted setup</p>
+  </li>
+  <li>
+    <p>RSA accumulators are replaced with elliptic curve groups</p>
+  </li>
+  <li>
+    <p>Reduction of Zerocoin proof sizes from 25 kb to around ~1kb allowing more Zerocoin transactions per block and making Zcoin much more scalable.</p>
+  </li>
+  <li>
+    <p>Higher security using 256-bit elliptic curves roughly equivalent to 3072 bit RSA (currently we are using 2048 bit RSA)</p>
+  </li>
+</ul>
+
+<p>We have also found the Sigma (Σ) protocol implemented in existing open source repositories greatly reducing the amount of work required to implement it in Zcoin. The Zcoin team will need to further examine its verification speed and computation time using the Sigma (Σ) protocol. We plan to implement the Sigma (Σ) protocol after MTP completion and Znodes. We are of the opinion that once Zcoin implements the Sigma (Σ) protocol, we would have a very compelling solution, offering the power and large anonymity sets of zero knowledge proofs with low proof size without having to trust anyone with the generation of initial parameters which is required in <a href="https://petertodd.org/2016/cypherpunk-desert-bus-zcash-trusted-setup-ceremony">other zero knowledge setups such as in Zcash.</a></p>
+
+<h2 id="update-on-mtp-development">Update on MTP Development</h2>
+
+<p>We know many of you are eager to hear about how we are coming along with MTP since we released it on Zcoin’s testnet. MTP continues to be tested and the dev team has made good progress on it with no major hurdles encountered.</p>
+
+<p>We are also testing various parameters to achieve a good balance between GPU and CPU performance while remaining ASIC resistant. We continue to work towards releasing MTP on mainnet as soon as possible along with GPU miners. It is promising to see so many top devs interested in the work we do and have received a lot of constructive feedback on it. We welcome anyone who wishes to work with us in improving MTP!</p>
+
+<p>Once we have finalized the parameters, we will hold a competition  to develop MTP miners with attractive bounties to incentivize efficient open sourced miners to the public.</p>
+
+                     </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    <footer class="section">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <h4>資源</h4>
+                      <ul>
+                          <li><a href="https://github.com/firoorg/firo">Github</a></li>
+                          <li><a href="https://sourceforge.net/projects/firoorg/">Sourceforge</a></li>
+                          <li><a href="/zh-tw/branding/">品牌</a></li>
+                          <li><a href="/zh-tw/2018/07/15/firo-vulnerability-bounty-program.html">漏洞計劃</a></li>
+                          <li><a href="https://explorer.firo.org/">區塊鏈瀏覽器</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <h4>網站</h4>
+                      <ul>
+                          <li><a href="/zh-tw/privacy-policy/">隱私政策</a></li>
+                          <li><a href="">服務條款</a></li>
+                      </ul>
+                  </div>
+                  <div class="col">
+                      <div>
+                          <h4>新聞期刊</h4>
+                          <p>如果你想訂閱我們的新聞期刊，請提交表格。</p>
+                          <form class="newsletter-form">
+                            <fieldset>
+                              <input type="email" class="newsletter-email" placeholder="郵箱*">
+                              <button type="submit" class="newsletter-submit"><span>訂閱</span></button>
+                            </fieldset>
+                          </form>
+                      </div>
+                      <div class="social">
+                          <h4>加入討論</h4>
+                          <ul>
+                              <li><a href="https://twitter.com/firoorg" target="_blank"><i class="icon-twitter"></i></a></li>
+                              <li><a href="https://www.facebook.com/firoorg/" target="_blank"><i class="icon-facebook"></i></a></li>
+                              <li><a href="https://www.youtube.com/c/firoorg" target="_blank"><i class="icon-youtube"></i></a></li>
+                              <li><a href="https://www.reddit.com/r/firoproject/" target="_blank"><i class="icon-reddit"></i></a></li>
+                              <li><a href="" target="_blank"><i class="icon-youku"></i></a></li>
+                              <li><a href="https://t.me/firoproject" target="_blank"><i class="icon-telegram"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="row bottom">
+                  <div class="col">
+                      <div href="#" class="dropdown language-change">
+                            <input class="burger-checkdropdown" id="langdrop" type="checkbox" tabindex="0">
+                            <label for="langdrop">繁體中文
+                           <div class="arrow-down"></div></label>
+                            <div class="dropdown-content text-center">
+                              
+                                
+                                  
+                                    <a href="/2017/04/21/zcoin-moving-beyond-trusted-setup-in-zerocoin.html" >English</a>
+                                  
+                                
+                              
+                                
+                                  
+                                    <a href="/zh-cn/2017/04/21/zcoin-moving-beyond-trusted-setup-in-zerocoin.html" >简体中文</a>
+                                  
+                                
+                              
+                                
+                              
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+    </main>
+  </body>
+</html>
