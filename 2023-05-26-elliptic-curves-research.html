@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Firo 中国节点 - Firo 中文</title>
-    <meta name="description" content="seed.firocn.org">
-    <meta property="og:image" content="https://firocn.org/imgs/nodes.png">
-    <meta property="og:title" content="Firo 中国节点">
-    <meta property="og:description" content="seed.firocn.org">
-    <meta name="twitter:title" content="Firo 中国节点">
-    <meta name="twitter:description" content="seed.firocn.org">
+    <title>推进隐私：Aram Jivanyan 推进 Lelantus Spark 研究 - Firo 中文</title>
+    <meta name="description" content="椭圆曲线研究">
+    <meta property="og:image" content="https://firo.org/blog/assets/elliptic-curves.png">
+    <meta property="og:title" content="推进隐私：Aram Jivanyan 推进 Lelantus Spark 研究">
+    <meta property="og:description" content="椭圆曲线研究">
+    <meta name="twitter:title" content="推进隐私：Aram Jivanyan 推进 Lelantus Spark 研究">
+    <meta name="twitter:description" content="椭圆曲线研究">
     
-      <meta name="twitter:card" content="summary">
+      <meta name="twitter:card" content="summary_large_image">
     
-    <meta name="twitter:image" content="https://firocn.org/imgs/nodes.png">
+    <meta name="twitter:image" content="https://firo.org/blog/assets/elliptic-curves.png">
     <meta name="theme-color" content="#9b1c2e">
 <link rel="stylesheet" href="css/style.css">
 <noscript>
@@ -94,39 +94,44 @@ Firo 中文</a></div>
       
         
           <header>
-            <h1>Firo 中国节点</h1>
+            <h1>推进隐私：Aram Jivanyan 推进 Lelantus Spark 研究</h1>
             
-              <p><em>加快同步速度</em></p>
+              <p><em>椭圆曲线研究</em></p>
             
             <p class="article-header-bar">
-              2022 年 3 月 17 日
+              2023 年 5 月 26 日
               
                 ｜
-                クロ
+                AJay
               
+              
+                ｜
+                <a href="https://firo.org/2023/05/26/elliptic-curves-research.html">
+                  原文
+                </a>
               
               
             </p>
           </header>
         
-        <p>如果你的全节点钱包同步很慢，可以添加中国节点 <code>seed.firocn.org</code> 加快同步速度。</p>
-<h2 id="可以直接在控制台添加（下次打开钱包失效）">可以直接在控制台添加（下次打开钱包失效）</h2>
-<p>在顶部菜单点击「帮助」，点击「调试窗口」，点击「控制台」选项卡。</p>
-<p>输入：</p>
-<pre><code>addnode seed.firocn.org add
-</code></pre>
-<p><img src="imgs/seed-screenshot1.webp" width="1344" height="1062" class="small small-radius"  alt="截图1"></p>
-<h2 id="也可以写进配置文件（永久有效）">也可以写进配置文件（永久有效）</h2>
-<p>进入你的 Firo 钱包数据目录。</p>
-<p><img src="imgs/seed-screenshot2.webp" width="1344" height="1062" class="small small-radius"  alt="截图2"></p>
-<p>创建或编辑 firo.conf 文件。</p>
-<p>添加一行：</p>
-<pre><code>addnode=seed.firocn.org
-</code></pre>
-<p><img src="imgs/seed-screenshot3.webp" width="1268" height="812" class="small small-radius"  alt="截图3"></p>
-<p>保存后，重新打开钱包，在调试窗口的同伴选项卡中应该就能够看到已连接上中国节点了。</p>
-<p><img src="imgs/seed-screenshot4.webp" width="2560" height="1344" class="small small-radius"  alt="截图3"></p>
-<p>同步愉快！</p>
+        <p><img src="https://firo.org/blog/assets/elliptic-curves.png" width="1920" height="960" class=" "  alt="推进隐私：椭圆曲线"></p>
+<p>我们很高兴地宣布，Magic Grants 已经批准为 Firo 的密码学家 Aram Jivanyan 提供研究经费，让他在 MAGIC Firo 基金的资助下进行为期六个月的曲线树研究。其主要目的是加强 Lelantus Spark 的隐私功能，进一步巩固其作为前沿隐私协议的地位。</p>
+<p><a href="https://magicgrants.org/funds/firo/">MAGIC Firo 基金</a>在 <a href="https://www.arcadiamgroup.com/">Arcadia</a> 的<a href="https://magicgrants.org/200000-Donation-from-Arcadia-for-Firo/">慷慨捐助</a>下，使这项研究资助成为可能。在与 MAGIC Grants 合作之前，Aram 进行了初步工作，以评估这个研究方向的可行性。在初步分析的鼓舞下，他相信这个项目将大大扩展 Lelantus Spark 最终实现中的匿名集。</p>
+<p>在即将到来的六个月里，研究将集中在以下关键领域：</p>
+<ol>
+<li><p>探讨实现成对椭圆曲线（如 secP256k1、secQ256k1 和其他相关曲线）的最高效方法。这包括在现有曲线实现的基础上开发一个 C++ 实现，或者考虑将 Rust 的实现绑定到我们的 C++ 库中。</p>
+</li>
+<li><p>将带有曲线树的成员证明整合到 Lelantus Spark 的综合设计中，确保与其他 Spark 组件的无缝互操作性。</p>
+</li>
+<li><p>设计一个基于 bulletproof 的电路，用于集合成员检查，并最终确定实现细节。</p>
+</li>
+<li><p>准备一份全面的研究论文，总结所有的发现和设计方面，具体重点是使用曲线树扩展 Lelantus Spark 的匿名集。</p>
+</li>
+</ol>
+<p>这项研究的结果有望解决Spark面临的主要挑战，即实现百万级的匿名集。此外，该研究结果可能对其他隐私加密货币协议有潜在的影响，如 Monero 的 Seraphis。</p>
+<p>除了 Lelantus Spark 的研究，这笔资金将支持 Aram 在 <a href="https://eprint.iacr.org/2022/543">Aura 投票协议</a>方面的持续工作。这包括完善论文、完善实现设计和架构，以及改进预印本以提交给受人尊敬的加密会议。</p>
+<p>我们感谢 MAGIC Grants 和 Arcadia 的慷慨支持，这使我们能够进一步突破隐私的界限，推进加密货币研究领域。请继续关注这一合作进展的激动人心的最新信息！</p>
+<p>相关文章：<br><a href="https://magicgrants.org/funds/firo/">MAGIC Firo 基金</a><br><a href="https://magicgrants.org/200000-Donation-from-Arcadia-for-Firo/">MAGIC Grants 收到 Arcadia 为 Firo 生态系统捐赠的 200,000 美元</a></p>
 
         
         
