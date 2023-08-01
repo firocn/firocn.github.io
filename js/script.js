@@ -109,10 +109,9 @@ function stickyHeader() {
   document.body.classList.remove('static-header')
 }
 
-function onUIUpdated(callback) {
+function onUIUpdated() {
   requestAnimationFrame(() => {
     bodyHeight = document.body.offsetHeight
     windowHeight = window.innerHeight
-    requestAnimationFrame(() => { typeof callback === 'function' && callback() })
   })
 }
